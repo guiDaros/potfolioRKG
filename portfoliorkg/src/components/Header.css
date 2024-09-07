@@ -1,0 +1,43 @@
+/* Estilo básico do Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  transition: background-color 0.7s ease, border-bottom 0.7s ease;
+  background-color: transparent; /* Transparente no topo */
+  border-bottom: none; /* Sem borda no topo */
+  z-index: 1000;
+}
+
+/* Alterações ao rolar */
+.header.scrolled {
+  background-color:#500260df; /* Cor suave ao rolar */
+}
+
+/* Logotipo e Navegação */
+.logo img {
+  height: 40px;
+  transform: rotate(40deg)
+}
+
+.nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-button {
+  padding: 10px 20px;
+  background-color: #80019a;
+  border-radius: 5px;
+  color: white;
+}
+
+.contact-button:hover {
+  background-color: #a004c7;
+}

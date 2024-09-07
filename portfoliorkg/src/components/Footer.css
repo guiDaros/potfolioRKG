@@ -1,0 +1,36 @@
+.footer {
+    display: flex;
+    justify-content: space-between; /* Espaça os elementos entre esquerda, centro e direita */
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(80, 2, 96, 0.87); /* Cor de fundo #500260df com opacidade */
+    color: #fff;
+    width: 100vw; /* Garante que ocupe 100% da largura da viewport */
+    position: relative;
+  }
+  
+  .footer-left img {
+    width: 100px; /* Tamanho do logo */
+  }
+  
+  .footer-center a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .footer-right {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social-icon {
+    width: 30px; /* Tamanho dos ícones de redes sociais */
+    height: 30px;
+  }
+  
+  .social-icon:hover {
+    opacity: 0.8; /* Efeito ao passar o mouse */
+  }
+  

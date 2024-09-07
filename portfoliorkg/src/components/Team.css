@@ -1,0 +1,55 @@
+/* Team.css */
+.team-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 40px 0; /* Remove espaçamento lateral */
+}
+
+.team-member {
+  background-color: #630077df; /* Cor levemente mais escura */
+  padding: 20px;
+  border-radius: 12px;
+  width: 70vw; /* Largura ajustada para 70vw */
+  height: 250px; /* Altura ajustada */
+  text-align: center;
+  transition: transform 0.3s ease;
+  color: #fff; /* Fonte branca */
+}
+
+.team-member:hover {
+  transform: scale(1.05); /* Efeito ao passar o mouse */
+}
+
+.team-member.left {
+  align-self: flex-start;
+  border-radius: 0 12px 12px 0; /* Apenas o lado direito arredondado */
+  margin-left: 0;
+}
+
+.team-member.right {
+  align-self: flex-end;
+  border-radius: 12px 0 0 12px; /* Apenas o lado esquerdo arredondado */
+  margin-right: 0;
+}
+
+.team-member.left,
+.team-member.right {
+  /* Removendo o espaçamento das laterais */
+  margin: 0;
+  padding-left: 0; /* Faz com que o bloco da esquerda fique encostado */
+  padding-right: 0; /* Faz com que o bloco da direita fique encostado */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .team-member {
+    width: 100%;
+    align-self: center;
+    border-radius: 12px; /* Bordas arredondadas em todos os lados em telas menores */
+  }
+}
+
+
+
+  

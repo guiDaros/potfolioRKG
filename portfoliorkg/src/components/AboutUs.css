@@ -1,0 +1,47 @@
+/* Estilos para a seção "About Us" */
+.about-us {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; /* Sem fundo para a seção */
+  }
+  
+  /* Conteúdo maior e responsivo */
+  .about-content {
+    background-color: #630077df; /* Fundo roxo escuro */
+    padding: 40px 20px; /* Maior espaçamento */
+    border-radius: 12px; /* Bordas arredondadas */
+    width: 90vw; /* Largura responsiva com base na largura da viewport */
+    max-width: 800px; /* Tamanho máximo em telas maiores */
+    color: #fff;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  /* Ajustes para telas maiores */
+  @media (min-width: 768px) {
+    .about-content {
+      padding: 60px 40px; /* Aumenta o padding em telas maiores */
+      width: 70vw; /* Largura maior em telas maiores */
+    }
+  
+    .about-content h2 {
+      font-size: 2.5rem;
+    }
+  
+    .about-content p {
+      font-size: 1.4rem;
+    }
+  }
+  

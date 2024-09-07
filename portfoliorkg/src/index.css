@@ -1,0 +1,23 @@
+/* Animação de gradiente em movimento */
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  background: linear-gradient(45deg, #1c011a, #2f0a29, #4f0047, #2d0028,#53075d, #2a0229,#120016, #290136);
+  background-size: 200% 200%; /* Tamanho ajustado para o movimento */
+  animation: moveGradient 6s ease infinite; /* Animação mais rápida: 8 segundos */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+}
